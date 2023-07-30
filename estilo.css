@@ -1,0 +1,50 @@
+
+body {
+    background-image: url('fondo.jpg'); /* Imagen de fondo */
+    background-size: 100%; /* Tamaño de fondo */
+    margin: 15px; /* Margen de 15 píxeles alrededor del body */
+    display: flex; /* sirve para organizar y que no quede todo junto */
+    flex-direction: column; /* Dirección de columna */
+    height: 98vh; /* Altura del 98% de la ventana */
+}
+
+/* Estilos para el contenedor */
+.container {
+    flex-grow: 1; /* El contenedor crece para ocupar todo el espacio disponible */
+    display: flex; /* Contenedor flex */
+    flex-direction: column; /* Dirección de columna */
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+/* Estilos para el párrafo dentro del contenedor */
+.container p {
+    align-self: flex-start; /* Alineación del párrafo en la parte superior del contenedor */
+    color: black; /* Color de texto negro */
+}
+
+/* Estilos para el título h1 dentro del contenedor */
+.container h1 {
+    text-align: center; /* Alineación centrada del texto */
+    align-self: center; /* Alineación del título en el centro del contenedor */
+    color: black; /* Color de texto negro */
+    text-align: initial; /* Restablece la alineación inicial del texto */
+}
+
+/* Estilos para el botón con la clase "boton" */
+.boton {
+    display: inline-block; /* Botón como elemento en línea */
+    text-align: center; /* Alineación centrada del texto dentro del botón */
+    padding: 10px 20px; /* Relleno del botón */
+    background-color: #d3d3d3; 
+    color: #000000; 
+    text-decoration: none; /* le saca los subrallado */
+    border: none; /* Sin borde */
+    border-radius: 1px; /* Bordes redondeados */
+    cursor: pointer; /* Cambio de cursor al pasar el ratón por encima */
+    font-size: 20px; 
+}
+
+/* Estilos cuando el cursor está sobre el botón */
+.boton:hover {
+    background-color: #7bb6ea; /* Cambio de color de fondo al pasar el ratón por encima */
+}
